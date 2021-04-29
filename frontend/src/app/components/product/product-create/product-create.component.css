@@ -1,7 +1,7 @@
-p {
-    color:black
+form {
+    display: flex;
+    flex-direction: column;
 }
-
 button {
-    margin-right: 5px
+    margin: 20px 15px 0px 0px;
 }
