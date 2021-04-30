@@ -1,6 +1,7 @@
 {
-  "name": "meu-crud",
+  "name": "meu-projeto",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "json-server --watch db.json --port 3001"
@@ -10,7 +11,5 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.16.3"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
