@@ -7,3 +7,22 @@
 .home .subtitle {
     font-size: 1.1rem;
 }
+
+.home .newsTitle{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .newsSubtitle {
+    font-size: 1.1rem;
+}
+
+p {
+    text-indent: 3ch
+}
+
+mat-card {
+    margin-bottom: 15px;
+}

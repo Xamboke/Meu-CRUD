@@ -1,9 +1,14 @@
 {
   "products": [
     {
-      "name": "Produto teste",
-      "price": "150.50",
+      "name": "Produto teste alterado",
+      "price": "129.90",
       "id": 1
+    },
+    {
+      "name": "novo produto",
+      "price": "123.20",
+      "id": 2
     }
   ]
 }
