@@ -1,3 +1,4 @@
+import { SweetalertCustom } from './../../Util/sweetAlert-custom';
 import { Product } from './../product.model';
 import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
@@ -24,7 +25,7 @@ export class ProductCreateComponent implements OnInit {
 
   createProduct(): void{
     this.productService.create(this.product).subscribe(() => {
-      this.productService.showMessage('Produto criado!');
+      SweetalertCustom.showAlertTimer('Produto criado com sucesso!',{type: 'success'})
       this.router.navigate(['/products']);
     });
     

@@ -1,3 +1,4 @@
+import { SweetalertCustom } from './../../Util/sweetAlert-custom';
 import { ProductService } from './../product.service';
 import { Product } from './../product.model';
 import { Component, OnInit } from '@angular/core';
@@ -25,10 +26,16 @@ export class ProductDeleteComponent implements OnInit {
   }
 
   deleteProduct(): void{
-    this.productService.delete(this.product.id).subscribe(() =>
-    this.productService.showMessage('Produto Excluido com sucesso!')
-    );
-    this.router.navigate(['/products']);
+    SweetalertCustom.showAlertConfirmAndCancel('Deseja excluir o produto?',{type: 'warning'},).then((SweetalertCustom) =>
+    {
+      if (SweetalertCustom.isConfirmed) {
+        this.productService.delete(this.product.id).subscribe(product => {
+          this.product = product
+        })
+
+        this.router.navigate(['/products']);
+      }
+    })
   }
 
   cancel(): void{

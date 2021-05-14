@@ -1,3 +1,4 @@
+import { SweetalertCustom } from './../../Util/sweetAlert-custom';
 import { Product } from './../product.model';
 import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
@@ -27,7 +28,7 @@ export class ProductUpdateComponent implements OnInit {
 
   updateProduct(): void{
     this.productService.update(this.product).subscribe(() => {
-      this.productService.showMessage('Produto atualizado com sucesso!');
+      SweetalertCustom.showAlertTimer('Produto alterado com sucesso!',{type: 'success'},2000,'')
       this.router.navigate(['/products']);
     })
   };

@@ -19,7 +19,7 @@ import { RedDirective } from './directives/red.directive';
 import { ForDirective } from './directives/for.directive';
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
 import { MatButtonModule } from '@angular/material/button';
-import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { HttpClientModule } from '@angular/common/http'
 
@@ -71,7 +71,7 @@ registerLocaleData(localePt);
     MatInputModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
   ],
   providers: [{
     provide: LOCALE_ID,
